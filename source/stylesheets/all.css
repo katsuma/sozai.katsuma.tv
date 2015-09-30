@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+h1, h2 {
+  color: rgba(0, 0, 0, .3);
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  margin-bottom: 10px;
+  width: 100%;
+}

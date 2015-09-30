@@ -1,0 +1,14 @@
+<h1>Sozai.katsuma.tv</h1>
+<ul>
+  <% images = data.images %>
+  <% images.each do |image|  %>
+    <li>
+      <h2><%= image.id %></h2>
+      <% if image.link %>
+        <a href="<%= image.link %>"><%= image_tag image.file_name, alt: image.id %></a>
+      <% else %>
+        <%= image_tag image.file_name, alt: image.id %>
+      <% end %>
+    </li>
+  <% end  %>
+</ul>

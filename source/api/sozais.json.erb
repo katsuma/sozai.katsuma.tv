@@ -1,0 +1,4 @@
+<% api_images = data.images.map do |image| %>
+  <% { title: image.id, image: "http://sozai.katsuma.tv/images/#{image.file_name}" } %>
+<% end %>
+<%= api_images.to_json %>
