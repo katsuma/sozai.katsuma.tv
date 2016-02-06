@@ -21,11 +21,28 @@ h2 {
   font-size: 24px;
 }
 
+ul {
+  padding-left: 0;
+}
+
 li {
   list-style-type: none;
 }
 
-img {
+li img {
   margin-bottom: 10px;
   width: 100%;
+}
+
+#ribbon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+@media screen and (max-device-width: 640px) {
+  #ribbon {
+    display: none;
+  }
 }
