@@ -13,7 +13,6 @@ set :images_dir, 'images'
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :asset_hash
   activate :imageoptim do |options|
     options.nice = true
     options.threads = true
