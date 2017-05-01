@@ -1,6 +1,6 @@
 # SOZAI.katsuma.tv
 
-[I am here](http://sozai.katsuma.tv). :D
+[I am here](https://sozai.katsuma.tv). :D
 
 ## Installing
 
