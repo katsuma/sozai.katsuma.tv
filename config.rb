@@ -4,13 +4,13 @@ configure :development do
 end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  system 'bundle exec ruby scripts/make_thumbnail.rb'
+
   activate :minify_css
   activate :minify_javascript
   activate :imageoptim do |options|
