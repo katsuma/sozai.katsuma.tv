@@ -2,13 +2,13 @@
 
 [I am here](https://sozai.katsuma.tv). :D
 
-## Installing
+## Install
 
 ```sh
-bundle
+bundle install --without build
 ```
 
-## Booting
+## Boot
 
 ```sh
 bundle exec middleman
@@ -17,7 +17,7 @@ bundle exec middleman
 And access `http://localhost:4567` on your web browser.
 
 
-## Contributing
+## Contribute
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
