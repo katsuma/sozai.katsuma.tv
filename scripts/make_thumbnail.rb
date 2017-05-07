@@ -1,10 +1,10 @@
-require 'RMagick'
+require 'rmagick'
 
 THUMBNAIL_SIZE = 200
 image_dir = "source/images/"
 
 image_file_names = Dir::entries(image_dir).select do |file_name|
-  file_name =~ /\.(jpg|png|gif)/
+  file_name =~ /\.(jpg|png|gif)\z/i && file_name !~ /\A(th\_)/i
 end
 
 puts "Resizing #{image_file_names.size} images"
