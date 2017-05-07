@@ -1,5 +1,5 @@
 <% image_dir = "https://sozai.katsuma.tv/images" %>
-<% api_images = data.images.map do |image| %>
+<% api_images = data.images.reverse.map do |image| %>
   <% { title: image.id.to_s, image: "#{image_dir}/#{image.file_name}", thumbnail: "#{image_dir}/th_#{image.file_name}" } %>
 <% end %>
 <%= api_images.to_json %>

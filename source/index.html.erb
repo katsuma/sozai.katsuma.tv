@@ -7,7 +7,7 @@
 <h1>Sozai.katsuma.tv</h1>
 
 <ul>
-  <% images = data.images %>
+  <% images = data.images.reverse %>
   <% images.each do |image|  %>
     <li>
       <h2><%= image.id %></h2>
