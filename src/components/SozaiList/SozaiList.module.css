@@ -1,0 +1,14 @@
+.sozaiList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  .sozaiList {
+    max-width: 1200px;
+    margin:0 auto;
+    height: 4000px;
+  }
+}
+
