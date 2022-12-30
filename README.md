@@ -2,19 +2,16 @@
 
 [I am here](https://sozai.katsuma.tv). :D
 
-## Install
+Sozai images are hosted on Vercel with Next.js.
 
-```sh
-bundle install --without build
-```
 
 ## Boot
 
 ```sh
-bundle exec middleman
+yarn dev
 ```
 
-And access `http://localhost:4567` on your web browser.
+And access `http://localhost:3000` on your web browser.
 
 
 ## Contribute
@@ -27,5 +24,5 @@ And access `http://localhost:4567` on your web browser.
 
 ### Note
 
-If you want to add some images add a new image to `source/images/` directory and edit `data/images.yml`.
-After your pull request is merged, deploy server will update `index.html` and `api/sozais.json` with the latest file.
+If you want to add some images add a new image to `public/images/` directory and edit `src/data/images.yml`.
+After your pull request is merged deploying the latest code to Vercel.
