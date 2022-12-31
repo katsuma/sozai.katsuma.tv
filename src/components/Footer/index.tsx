@@ -1,11 +1,11 @@
 import styles from 'src/components/Footer/Footer.module.css';
-import { FaGithub } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = (new Date()).getFullYear()
   return (
     <footer className={styles.footer}>
-      <a href="https://github.com/katsuma/sozai.katsuma.tv/">
+      <a href="https://github.com/katsuma/sozai.katsuma.tv/" aria-label="Contribnute on GitHub" className={styles.icon}>
         <FaGithub />
       </a>
 
