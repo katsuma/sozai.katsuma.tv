@@ -11,9 +11,19 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export async function loader({ params }: Route.LoaderArgs) {
-  const filePath = path.resolve(__dirname, "../data/images.yml");
-  const fileContent = fs.readFileSync(filePath, "utf8");
-  return yaml.parse(fileContent) as Sozai[];
+  try {
+    const filePath = path.resolve(__dirname, "../data/images.yml");
+    if (fs.existsSync(filePath)) {
+      const fileContent = await fs.promises.readFile(filePath, "utf8");
+      return yaml.parse(fileContent) as Sozai[];
+    } else {
+      console.warn("Warning: images.yml file not found.");
+      return [];
+    }
+  } catch (error) {
+    console.error("Error loading images.yml:", error);
+    return [];
+  }
 }
 
 export function meta({}: Route.MetaArgs) {
