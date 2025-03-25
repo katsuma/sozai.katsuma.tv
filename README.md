@@ -38,8 +38,3 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 ---
 
 Built with ❤️ using React Router.
-
-### Note
-
-If you want to add some images add a new image to `public/images/` directory and edit `app/data/images.yml`.
-After your pull request is merged deploying the latest code to Vercel.
