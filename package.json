@@ -1,27 +1,35 @@
 {
-  "license": "MIT",
+  "name": "sozai.katsuma.tv",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "next": "^14.2.21",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@react-router/node": "^7.4.0",
+    "@react-router/serve": "^7.4.0",
+    "@types/lodash": "^4.17.16",
+    "isbot": "^5.1.17",
+    "lodash": "^4.17.21",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-router": "^7.4.0",
+    "yaml": "^2.7.0"
   },
   "devDependencies": {
-    "@types/js-yaml": "^4.0.5",
-    "@types/node": "18.11.18",
-    "@types/react": "18.0.26",
-    "@typescript-eslint/eslint-plugin": "^5.47.1",
-    "@typescript-eslint/parser": "^5.47.1",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "js-yaml": "^4.1.0",
-    "prettier": "^2.8.1",
-    "react-icons": "^4.7.1",
-    "typescript": "^5.1.6"
+    "@react-router/dev": "^7.4.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "react-router-devtools": "^1.1.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11",
+    "vite-tsconfig-paths": "^5.1.4"
   }
 }

@@ -1,28 +1,40 @@
+
 # SOZAI.katsuma.tv
 
 [I am here](https://sozai.katsuma.tv). :D
 
-Sozai images are hosted on Vercel with Next.js.
+## Getting Started
 
+### Installation
 
-## Boot
+Install the dependencies:
 
-```sh
-yarn dev
+```bash
+npm install
 ```
 
-And access `http://localhost:3000` on your web browser.
+### Development
 
+Start the development server with HMR:
 
-## Contribute
+```bash
+npm run dev
+```
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Your application will be available at `http://localhost:5173`.
 
-### Note
+## Building for Production
 
-If you want to add some images add a new image to `public/images/` directory and edit `src/data/images.yml`.
-After your pull request is merged deploying the latest code to Vercel.
+Create a production build:
+
+```bash
+npm run build
+```
+
+## Styling
+
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+
+---
+
+Built with ❤️ using React Router.
